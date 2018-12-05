@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:  local("Robotolight"),
+        local("Roboto-light"),
+        url("../fonts/Robotolight.woff") format("woff"),
+        url("../fonts/Robotolight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  local("Roboto"),
+        url("../fonts/Roboto.woff") format("woff"),
+        url("../fonts/Roboto.woff2") format("woff2"); 
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:  local("Robotomedium"),
+        local("Roboto-medium"),
+        url("../fonts/Robotomedium.woff") format("woff"),
+        url("../fonts/Robotomedium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:  local("Robotobold"),
+        local("Robotobold"),
+        url("../fonts/Robotobold.woff") format("woff"),
+        url("../fonts/Robotobold.woff2") format("woff2");
+}
+
+.page-body {
+  padding: 0;
+  margin: 0;
+  min-width: 630px;
+  max-width: 1920px;
+  box-sizing: border-box;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 400;
+  color: $gray;
+
+  background-color: $white;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+button:active, button:focus {
+  outline: none !important;;
+}
+button::-moz-focus-inner {
+  border: 0 !important;;
+}

@@ -1,0 +1,118 @@
+.slogan {
+  position: relative;
+
+  min-height: 455px;
+
+  background-image: url("/img/background_slogan1x.jpg");
+  background-color: no-repeat;
+  background-size: 1920px 455px;
+  background-position: 0 50%;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("/img/background_slogan2x.jpg");
+  }
+}
+
+.slogan__title {
+  margin: 0;
+  margin-left: 18.55%;
+  padding-top: 155px;
+}
+
+.slogan__day {
+  position: relative;
+
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $green;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -35px;
+    right: -35px;
+
+    width: 290px;
+    height: 131px;
+
+    border: 4px solid rgba(114, 175, 48, 0.23);
+  }
+}
+
+.slogan__hour {
+  display: inline-block;
+
+  font-size: 54px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $dark-green;
+}
+
+.slogan__wrapper {
+  position: absolute;
+  bottom: 35px;
+  right: 63px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan__container {
+  display: flex;
+  height: 41px;
+  margin-top: 5px;
+  margin-left: auto;
+
+  font-size: 0;
+
+  overflow: hidden;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.slogan__button {
+  position: relative;
+  z-index: 1;
+  order: 1;
+
+  display: inline-block;
+  height: 41px;
+  width: 41px;
+
+  vertical-align: top;
+
+  border: none;
+  background-color: $green;
+}
+
+.slogan__text{
+  position: relative;
+
+  display: inline-block;
+  padding-left: 17px;
+
+  font-size: 18px;
+  line-height: 41px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $white;
+
+  background-color: $green;
+
+  transform: translateX(100%);
+
+  transition: transform 0.2s linear;
+}
+
+.slogan__button:hover + .slogan__text {
+  transform: translateX();
+}
+

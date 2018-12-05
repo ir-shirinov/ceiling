@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Натяжные потолки "Натяжнов"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel ="preload" href="/fonts/Robotolight.woff2" as="font">
+    <link rel ="preload" href="/fonts/Roboto.woff2" as="font">
+    <link rel ="preload" href="/fonts/Robotomedium.woff2" as="font">
+    <link rel ="preload" href="/fonts/Robotobold.woff2" as="font">
+    <meta name="theme-color" content="#59B039">
+  </head>
+  <body class="page-body">
+
+    <div style="display: none">
+      @@include("./build/img/sprite.svg")
+    </div>
+
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <img class="header__img" src="img/logo.svg" widht="141" height="83" alt="Логотип Натяжнов">
+        </a>
+
+        <div class="header__container">
+          <span class="header__text">Г. НОВЫЙ-УРЕНГОЙ</span>
+          <button class="header__button" type="button">ГРАФИК РАБОТЫ</button>
+        </div>
+
+        <div class="header__container header__container--end ">
+          <a class="header__text header__text--link header__text--mobile" href="tel:+79224597750">8-922-459-77-50</a>
+          <p class="header__text header__text--phone">8-922-459-77-50</p>
+          <div class="header__line">
+            <a class="header__social" target="_blank" href="https://vk.com/">
+              <svg width="36" height="36">
+                <use xlink:href="#sprite-vk"></use>
+              </svg>
+            </a>
+            <button class="header__button" type="button" id="call">ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">Выгоды</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Виды потолков</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Этапы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Посещение офиса</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Портфорлио</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Для партнеров</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">Натяжные потолки "Натяжнов"</h1>
+
+      <section class="slogan">
+        <h2 class="slogan__title">
+          <span class="slogan__day">КАЧЕСТВЕННЫЙ НАТЯЖНОЙ ПОТОЛОК ЗА 1 ДЕНЬ</span>
+          <span class="slogan__hour">ВЫЕЗД НА ЗАМЕР ЧЕРЕЗ 1 ЧАС</span>
+        </h2>
+
+        <div class="slogan__wrapper">
+          <div class="slogan__container">
+            <button class="slogan__button" type="button">
+              <svg class="slogan__icon" width="30" height="30">
+                <use xlink:href="#sprite-consultations"></use>
+              </svg>
+            </button>
+            <span class="slogan__text">ВЫЗВАТЬ ЗАМЕРЩИКА</span>
+          </div>
+          
+          <div class="slogan__container">
+            <button class="slogan__button" type="button">
+              <svg class="slogan__icon" width="30" height="30">
+                <use xlink:href="#sprite-call"></use>
+              </svg>
+            </button>
+            <span class="slogan__text">ЗАКАЗАТЬ ЗВОНОК</span>
+          </div>
+          
+          <div class="slogan__container">
+            <button class="slogan__button" type="button">
+              <svg class="slogan__icon" width="30" height="30">
+                <use xlink:href="#sprite-measure"></use>
+              </svg>
+            </button>
+            <span class="slogan__text">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+          </div>
+          
+          <div class="slogan__container">
+            <button class="slogan__button" type="button">
+              <svg class="slogan__icon" width="30" height="30">
+                <use xlink:href="#sprite-price"></use>
+              </svg>
+            </button>
+            <span class="slogan__text">УЗНАТЬ ЦЕНУ</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="measure">
+        <h2 class="main__title measure__title">БЕСПЛАТНЫЙ ЗАМЕР В НОВОМ УРЕНГОЕ</h2>
+
+        <form class="measure__form" action="#" method="POST">
+          <div class="measure__container">
+            <label class="measure__placeholder measure__placeholder--email" for="email">Ваш e-mail</label>
+            <input class="measure__field measure__field--email" type="email" name="email" id="email" required>
+            <label class="measure__placeholder measure__placeholder--address" for="address">Ваш адрес в Новом Уренгое</label>
+            <input class="measure__field measure__field--address" type="text" name="address" id="address">
+          </div>
+
+          <div class="measure__container">
+            <label class="measure__placeholder measure__placeholder--date" for="date">Дата</label>
+            <input class="measure__date" type="date" name="date" id="date">
+            <label class="measure__placeholder measure__placeholder--time" for="time">Время</label>
+            <input class="measure__field measure__field--time" type="time" name="time">
+          </div>
+
+          <div class="measure__container">
+            <p class="measure__nearest">Ближайшее время замера<time datetime="2018-11-15T13:00" class="measure__clock">13:00 15.11.2018</time></p>
+            <button class="main__button measure__submit" type="submit">Вызвать замерщика</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="features">
+        <h2 class="main__title features__title">ВАЖНЫЕ МОМЕНТЫ</h2>
+
+        <div class="features__wrapper">
+          <div class="features__container">
+            <h3 class="features__subtitle features__subtitle--main">Свое производство</h3>
+            <p class="fearutes__text fearutes__text--main">Гарантирует Вам 100% качество натяжных потолков</p>
+          </div>
+
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__subtitle">Рассрочка</h3>
+              <p class="fearutes__text">Беспроцентная рассрочка на 3 месяца</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__subtitle">300 цветов</h3>
+              <p class="fearutes__text">Все цветовые оттенки и решения будут реализованы</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__subtitle">Безопасность</h3>
+              <p class="fearutes__text">Используем в работе только газовое оборудование</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__subtitle">10 лет опыта</h3>
+              <p class="fearutes__text">Консультации максимально объемны, сервис отлажен</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="products">
+        <h2 class="main__title products__title">ЛЮБОЙ ПОТОЛОК ЗА 550 Р/ М2</h2>
+        <span class="products__text">мы считаем что цена не должна влиять на Ваш выбор</span>
+        <ul class="products__list">
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <img class="products__img" src="img/matt.img" alt="Матовые потолки">
+              <h3 class="products__subtitle">МАТОВЫЕ</h3>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <img class="products__img" src="img/glossy.img" alt="Глянцевые потолки">
+              <h3 class="products__subtitle">ГЛЯНЦЕВЫЕ</h3>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <img class="products__img" src="img/sateen.img" alt="Сатиновые потолки">
+              <h3 class="products__subtitle">САТИНОВЫЕ</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="catalog">
+        <img class="catalog__img" src="catalog.img" alt="Каталог компании Натяжнов">
+
+        <div class="catalog__container">
+          <h2 class="catalog__title">ПОЛУЧИТЬ КАТАЛОГ</h2>
+          <span class="catalog__company">от компании нятяжнов</span>
+          <p class="catalog__text">В нем Вы сможете подобрать цвет и оформление будущего потолка</p>
+          <button class="catalog__button" type="button">ПОЛУЧИТЬ</button>
+        </div>
+      </section>
+
+    </main>
+
+    <section class="popup call">
+      <button class="call__close" id="call-close"></button>
+      <form class="call__form" action="#" method="POST">
+        <h2 class="call__title">Заказать звонок</h2>
+        <input type="text" name="time" placeholder="Удобное время для звонка">
+        <div class="call__container">
+          <input type="text" name="name" placeholder="Ваше имя">
+          <input type="tel" name="phone" placeholder="Ваш телефон">
+        </div>
+        <button class="call__submit" type="submit">Заказать</button>
+      </form>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
